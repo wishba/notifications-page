@@ -73,6 +73,10 @@ p {
   content: url(assets/images/avatar-anna-kim.webp);
 }
 
+.notification__comment--chess {
+  content: url(assets/images/image-chess.webp);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
