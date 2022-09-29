@@ -45,6 +45,10 @@ p {
   background-color: var(--very-light-grayish-blue);
 }
 
+.notification__sent {
+  border: 1px solid black;
+}
+
 .notification__avatar--mark {
   content: url(assets/images/avatar-mark-webber.webp);
 }
