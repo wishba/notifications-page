@@ -29,8 +29,23 @@ p {
   display: flex;
 }
 
+.head__title {
+  margin: 0;
+  font-size: 25px;
+  color: var(--very-dark-blue);
+}
+
+.head__title--number {
+  color: var(--white);
+  background-color: var(--blue);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
 .head__mark {
-  margin-left: auto;
+  margin: auto 0 auto auto;
+  color: var(--dark-grayish-blue);
 }
 
 .notification {
@@ -43,10 +58,6 @@ p {
 
 .notification--unread {
   background-color: var(--very-light-grayish-blue);
-}
-
-.notification__sent {
-  border: 1px solid black;
 }
 
 .notification__avatar--mark {
@@ -77,12 +88,16 @@ p {
   content: url(assets/images/avatar-anna-kim.webp);
 }
 
+.notification__name {
+  font-weight: 800;
+}
+
 .notification__comment--chess {
   content: url(assets/images/image-chess.webp);
 }
 
-.notification__name {
-  font-weight: 800;
+.notification__sent {
+  border: 1px solid black;
 }
 
 .attribution {
