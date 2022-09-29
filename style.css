@@ -27,6 +27,8 @@ p {
 
 .head {
   display: flex;
+  padding-top: 35px;
+  padding-bottom: 35px;
 }
 
 .head__title {
