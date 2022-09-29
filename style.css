@@ -33,8 +33,20 @@ p {
   margin-left: auto;
 }
 
+.notification {
+  display: flex;
+}
+
+.notification>* {
+  margin-bottom: auto;
+}
+
 .notification--unread {
   background-color: var(--very-light-grayish-blue);
+}
+
+.notification__avatar {
+  content: url(assets/images/avatar-mark-webber.webp);
 }
 
 .attribution {
