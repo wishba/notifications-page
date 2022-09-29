@@ -81,6 +81,10 @@ p {
   content: url(assets/images/image-chess.webp);
 }
 
+.notification__name {
+  font-weight: 800;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
