@@ -16,11 +16,30 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
 }
 
 p {
   font-size: 16px;
+}
+
+.head {
+  display: flex;
+}
+
+.head__mark {
+  margin-left: auto;
+}
+
+.notification--unread {
+  background-color: var(--very-light-grayish-blue);
+}
+
+.notification__head {
+  display: flex;
+  /* flex-wrap: wrap; */
 }
 
 .attribution {
