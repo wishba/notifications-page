@@ -37,11 +37,6 @@ p {
   background-color: var(--very-light-grayish-blue);
 }
 
-.notification__head {
-  display: flex;
-  /* flex-wrap: wrap; */
-}
-
 .attribution {
   font-size: 11px;
   text-align: center;
