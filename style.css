@@ -1,11 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
 
 :root {
-  /* Primary */
   --red: hsl(1, 90%, 64%);
   --blue: hsl(219, 85%, 26%);
 
-  /* Neutral */
   --white: hsl(0, 0%, 100%);
   --very-light-grayish-blue: hsl(210, 60%, 98%);
   --light-grayish-blue-1: hsl(211, 68%, 94%);
@@ -62,44 +60,16 @@ p {
   background-color: var(--very-light-grayish-blue);
 }
 
-.notification__avatar--mark {
-  content: url(assets/images/avatar-mark-webber.webp);
-}
-
-.notification__avatar--angela {
-  content: url(assets/images/avatar-angela-gray.webp);
-}
-
-.notification__avatar--jacob {
-  content: url(assets/images/avatar-jacob-thompson.webp);
-}
-
-.notification__avatar--rizky {
-  content: url(assets/images/avatar-rizky-hasanuddin.webp);
-}
-
-.notification__avatar--kimberly {
-  content: url(assets/images/avatar-kimberly-smith.webp);
-}
-
-.notification__avatar--nathan {
-  content: url(assets/images/avatar-nathan-peterson.webp);
-}
-
-.notification__avatar--anna {
-  content: url(assets/images/avatar-anna-kim.webp);
-}
-
 .notification__name {
   font-weight: 800;
 }
 
-.notification__comment--chess {
-  content: url(assets/images/image-chess.webp);
-}
-
 .notification__sent {
   border: 1px solid black;
+}
+
+.notification__picture {
+  margin-left: auto;
 }
 
 .attribution {
