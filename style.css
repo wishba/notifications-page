@@ -21,8 +21,7 @@ body {
 }
 
 main {
-  /* margin: 0 16px 0 16px; */
-  /* margin: 0 32px 0 32px; */
+  padding: 0 32px 0 32px;
   margin: 60px auto;
   background-color: var(--white);
   max-width: 700px;
@@ -128,4 +127,10 @@ p {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width:600px) {
+  main {
+    padding: 0 16px 0 16px;
+  }
 }
