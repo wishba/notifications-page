@@ -32,6 +32,15 @@ p {
   margin: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: var(--blue);
+}
+
 .head {
   display: flex;
   padding-top: 35px;
