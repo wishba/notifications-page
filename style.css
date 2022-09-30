@@ -24,6 +24,11 @@ p {
   margin: 0;
 }
 
+main {
+  margin: 0 16px 0 16px;
+  /* margin: 0 32px 0 32px; */
+}
+
 .head {
   display: flex;
   padding-top: 35px;
@@ -72,13 +77,35 @@ p {
 }
 
 .notification__name {
+  margin-right: 8px;
+  color: var(--very-dark-blue);
   font-weight: 800;
 }
 
-.notification__sent {
+.notification__do {
+  margin-right: 8px;
+  color: var(--grayish-blue);
+}
+
+.notification__post {
+  color: var(--dark-grayish-blue);
+  font-weight: 800;
+}
+
+.notification__group {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.notification__time {
+  color: var(--grayish-blue);
+}
+
+.notification__message {
   margin-top: 10px;
   padding: 20px;
-  border: 1px solid black;
+  border: 1px solid var(--grayish-blue);
+  color: var(--dark-grayish-blue);
 }
 
 .notification__picture {
