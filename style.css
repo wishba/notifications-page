@@ -68,11 +68,15 @@ main {
   background-color: var(--very-light-grayish-blue);
 }
 
+.notification--unread .notification__head::after {
+  content: 'unread';
+}
+
 .notification__avatar {
   height: 45px;
 }
 
-.notification__body {
+.notification__container {
   margin-left: 16px;
 }
 
