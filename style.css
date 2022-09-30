@@ -17,16 +17,20 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Plus Jakarta Sans', sans-serif;
+  background-color: var(--very-light-grayish-blue);
+}
+
+main {
+  /* margin: 0 16px 0 16px; */
+  /* margin: 0 32px 0 32px; */
+  margin: 60px auto;
+  background-color: var(--white);
+  max-width: 700px;
 }
 
 p {
   font-size: 16px;
   margin: 0;
-}
-
-main {
-  margin: 0 16px 0 16px;
-  /* margin: 0 32px 0 32px; */
 }
 
 .head {
