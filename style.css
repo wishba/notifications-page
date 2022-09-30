@@ -60,6 +60,10 @@ p {
   background-color: var(--very-light-grayish-blue);
 }
 
+.notification__avatar {
+  height: 45px;
+}
+
 .notification__name {
   font-weight: 800;
 }
@@ -70,6 +74,7 @@ p {
 
 .notification__picture {
   margin-left: auto;
+  height: 45px;
 }
 
 .attribution {
