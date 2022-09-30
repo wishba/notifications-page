@@ -21,8 +21,8 @@ body {
 }
 
 main {
-  padding: 0 32px 0 32px;
   margin: 60px auto;
+  padding: 0 32px 0 32px;
   background-color: var(--white);
   max-width: 700px;
 }
@@ -71,8 +71,17 @@ p {
   background-color: var(--very-light-grayish-blue);
 }
 
+.notification__head {
+  position: relative;
+}
+
 .notification--unread .notification__head::after {
-  content: 'unread';
+  content: '';
+  border: 5px solid var(--red);
+  font-size: 0;
+  border-radius: 5px;
+  position: absolute;
+  top: 7px;
 }
 
 .notification__avatar {
@@ -95,11 +104,13 @@ p {
 }
 
 .notification__post {
+  margin-right: 8px;
   color: var(--dark-grayish-blue);
   font-weight: 800;
 }
 
 .notification__group {
+  margin-right: 8px;
   color: var(--blue);
   font-weight: 800;
 }
