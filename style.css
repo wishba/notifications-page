@@ -102,18 +102,18 @@ a:hover {
 }
 
 .notification__name {
-  margin-right: 8px;
+  /* margin-right: 8px; */
   color: var(--very-dark-blue);
   font-weight: 800;
 }
 
 .notification__do {
-  margin-right: 8px;
+  /* margin-right: 8px; */
   color: var(--grayish-blue);
 }
 
 .notification__post {
-  margin-right: 8px;
+  /* margin-right: 8px; */
   color: var(--dark-grayish-blue);
   font-weight: 800;
 }
