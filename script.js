@@ -7,8 +7,15 @@ function appendData(object) {
   for (const iterator of object) {
     console.log(iterator);
     let div = document.createElement("div")
-    // <div class="notification notification--unread">
-    div.className = "notification";
+
+    if (iterator.status === "unread") {
+      div.className = "notification notification--unread";
+    }
+
+    if (iterator.status === "read") {
+      div.className = "notification";
+    }
+
     div.innerHTML = `
       <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
       <div class="notification__container">
