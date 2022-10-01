@@ -27,6 +27,7 @@
     "time": "1 day ago"
   },
   {
+    "id": "4",
     "status": "read",
     "avatar": "assets/images/avatar-rizky-hasanuddin.webp",
     "name": "Rizky Hasanuddin",
@@ -35,6 +36,7 @@
     "time": "5 days ago"
   },
   {
+    "id": "5",
     "status": "read",
     "avatar": "assets/images/avatar-kimberly-smith.webp",
     "name": "Kimberly Smith",
@@ -43,6 +45,7 @@
     "time": "1 week ago"
   },
   {
+    "id": "6",
     "status": "read",
     "avatar": "assets/images/avatar-nathan-peterson.webp",
     "name": "Nathan Peterson",
@@ -51,6 +54,7 @@
     "time": "2 weeks ago"
   },
   {
+    "id": "7",
     "status": "read",
     "avatar": "assets/images/avatar-anna-kim.webp",
     "name": "Anna Kim",
