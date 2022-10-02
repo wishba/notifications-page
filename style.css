@@ -107,7 +107,7 @@ a:hover {
   font-weight: 800;
 }
 
-.notification__do {
+.notification__activity-category {
   /* margin-right: 8px; */
   color: var(--grayish-blue);
 }
@@ -128,7 +128,8 @@ a:hover {
   color: var(--grayish-blue);
 }
 
-.notification__message {
+.notification__activity.notification__activity--message {
+  /* .notification__message { */
   margin-top: 10px;
   padding: 20px;
   border: 1px solid var(--grayish-blue);

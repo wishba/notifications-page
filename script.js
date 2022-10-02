@@ -23,8 +23,8 @@ function appendData(object) {
           <span class="notification__name">
             <a href="#">${iterator.name}</a>
           </span>
-          <span class="notification__do">${iterator.activityCategory}</span>
-          <span class="notification__post">
+          <span class="notification__activity-category">${iterator.activityCategory}</span>
+          <span class="notification__activity">
             <a href="#">${iterator.activity}</a>
           </span>
         </p>
