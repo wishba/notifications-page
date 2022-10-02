@@ -11,6 +11,8 @@
   --grayish-blue: hsl(219, 14%, 63%);
   --dark-grayish-blue: hsl(219, 12%, 42%);
   --very-dark-blue: hsl(224, 21%, 14%);
+
+  --notification-max-width: 700px;
 }
 
 body {
@@ -24,7 +26,7 @@ main {
   margin: 60px auto;
   padding: 0 32px 0 32px;
   background-color: var(--white);
-  max-width: 700px;
+  max-width: var(--notification-max-width);
 }
 
 p {
@@ -102,32 +104,23 @@ a:hover {
 }
 
 .notification__name {
-  /* margin-right: 8px; */
   color: var(--very-dark-blue);
   font-weight: 800;
 }
 
 .notification__activity-category {
-  /* margin-right: 8px; */
   color: var(--grayish-blue);
 }
 
 .notification__activity-category.notification__activity-category--message+.notification__activity {
-  background-color: red;
-  /* margin-top: 10px;
+  margin-top: 10px;
   padding: 20px;
+  color: var(--dark-grayish-blue);
   border: 1px solid var(--grayish-blue);
-  color: var(--dark-grayish-blue); */
+  display: block;
 }
 
-/* .notification__message:hover {
-  cursor: pointer;
-  border: 1px solid transparent;
-  background-color: var(--very-light-grayish-blue);
-} */
-
 .notification__post {
-  /* margin-right: 8px; */
   color: var(--dark-grayish-blue);
   font-weight: 800;
 }
