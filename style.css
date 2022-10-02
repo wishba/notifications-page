@@ -112,7 +112,7 @@ a:hover {
   color: var(--grayish-blue);
 }
 
-.notification__activity-category.notification__activity-category--message+.notification__activity {
+.notification__activity--message {
   margin-top: 10px;
   padding: 20px;
   color: var(--dark-grayish-blue);

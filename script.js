@@ -16,9 +16,9 @@ function appendData(object) {
       div.className = "notification";
     }
 
-    let category = "notification__activity-category";
+    let activity = "notification__activity";
     if (iterator.activityCategory == "sent you a private message") {
-      category = "notification__activity-category notification__activity-category--message";
+      activity = "notification__activity notification__activity--message";
     }
 
     div.innerHTML = `
@@ -28,10 +28,10 @@ function appendData(object) {
           <span class="notification__name">
             <a href="#">${iterator.name}</a>
           </span>
-          <span class="${category}">
+          <span class="notification__activity-category">
             ${iterator.activityCategory}
           </span>
-          <span class="notification__activity">
+          <span class="${activity}">
             <a href="#">${iterator.activity}</a>
           </span>
         </p>
