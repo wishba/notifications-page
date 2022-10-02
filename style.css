@@ -112,6 +112,20 @@ a:hover {
   color: var(--grayish-blue);
 }
 
+.notification__activity-category.notification__activity-category--message+.notification__activity {
+  background-color: red;
+  /* margin-top: 10px;
+  padding: 20px;
+  border: 1px solid var(--grayish-blue);
+  color: var(--dark-grayish-blue); */
+}
+
+/* .notification__message:hover {
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: var(--very-light-grayish-blue);
+} */
+
 .notification__post {
   /* margin-right: 8px; */
   color: var(--dark-grayish-blue);
@@ -126,20 +140,6 @@ a:hover {
 
 .notification__time {
   color: var(--grayish-blue);
-}
-
-.notification__activity.notification__activity--message {
-  /* .notification__message { */
-  margin-top: 10px;
-  padding: 20px;
-  border: 1px solid var(--grayish-blue);
-  color: var(--dark-grayish-blue);
-}
-
-.notification__message:hover {
-  cursor: pointer;
-  border: 1px solid transparent;
-  background-color: var(--very-light-grayish-blue);
 }
 
 .notification__picture {

@@ -18,7 +18,7 @@ function appendData(object) {
 
     let category = "notification__activity-category";
     if (iterator.activityCategory == "sent you a private message") {
-      category = "notification__activity-category--message";
+      category = "notification__activity-category notification__activity-category--message";
     }
 
     div.innerHTML = `
