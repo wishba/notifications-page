@@ -21,6 +21,9 @@ function appendData(object) {
     if (iterator.activityCategory == "commented on your picture") {
       notification = "notification__container notification__container--picture";
     }
+    if (iterator.activityCategory == "followed you") {
+      notification = "notification__container notification__container--followed";
+    }
 
     let avatar = `
       <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
@@ -62,6 +65,17 @@ function appendData(object) {
         </p>
       </div>
       <div class="notification__picture" style="background-image: url(assets/images/image-chess.webp);"></div>
+    `;
+    } else if (notification == "notification__container notification__container--followed") {
+      div.innerHTML = `
+      ${avatar}
+      <div class="${notification}">
+        <p class="notification__head">
+          ${name}
+          ${activityCategory}
+        </p>
+        <p class="notification__time">${iterator.time}</p>
+      </div>
     `;
     } else {
       div.innerHTML = `
