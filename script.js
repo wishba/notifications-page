@@ -4,11 +4,15 @@ fetch("data.json")
   .catch((err) => console.log(err))
 
 function appendData(object) {
+  let unread = 0;
+
   for (const iterator of object) {
     console.log(iterator);
     let div = document.createElement("div")
     if (iterator.status === "unread") {
       div.className = "notification notification--unread";
+
+      unread = unread + 1;
     }
     if (iterator.status === "read") {
       div.className = "notification";
@@ -93,4 +97,7 @@ function appendData(object) {
 
     document.getElementById("notification").appendChild(div);
   }
+
+  console.log(unread);
+  document.getElementById("notificationCount").innerHTML = unread;
 }
