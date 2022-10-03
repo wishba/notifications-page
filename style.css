@@ -82,10 +82,6 @@ a:hover {
   background-color: var(--very-light-grayish-blue);
 }
 
-.notification__head {
-  position: relative;
-}
-
 .notification--unread .notification__head::after {
   content: '';
   border: 5px solid var(--red);
@@ -103,6 +99,27 @@ a:hover {
   margin-left: 16px;
 }
 
+.notification__container--message {
+  position: relative;
+}
+
+.notification__container--message .notification__activity {
+  margin-top: 2em;
+  padding: 20px;
+  color: var(--dark-grayish-blue);
+  border: 1px solid var(--grayish-blue);
+  display: block;
+}
+
+.notification__container--message .notification__time {
+  position: absolute;
+  top: 1.5em;
+}
+
+.notification__head {
+  position: relative;
+}
+
 .notification__name {
   color: var(--very-dark-blue);
   font-weight: 800;
@@ -112,32 +129,8 @@ a:hover {
   color: var(--grayish-blue);
 }
 
-.notification__activity--message {
-  margin-top: 10px;
-  padding: 20px;
-  color: var(--dark-grayish-blue);
-  border: 1px solid var(--grayish-blue);
-  display: block;
-}
-
-.notification__post {
-  color: var(--dark-grayish-blue);
-  font-weight: 800;
-}
-
-.notification__group {
-  margin-right: 8px;
-  color: var(--blue);
-  font-weight: 800;
-}
-
 .notification__time {
   color: var(--grayish-blue);
-}
-
-.notification__picture {
-  margin-left: auto;
-  height: 45px;
 }
 
 .attribution {
