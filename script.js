@@ -47,7 +47,7 @@ function appendData(object) {
           ${activityCategory}
         </p>
         <p class="notification__time">${iterator.time}</p>
-        <p>${iterator.activity}</p>  
+        <p class="notification__message">${iterator.activity}</p>  
       </div>
     `;
     } else if (notification == "notification__container notification__container--picture") {
@@ -57,10 +57,9 @@ function appendData(object) {
         <p class="notification__head">
           ${name}
           ${activityCategory}
-          ${activity}
         </p>
-        <img src="${iterator.activity}">
       </div>
+      <div class="notification__picture" style="background-image: url(assets/images/image-chess.webp);"></div>
     `;
     } else {
       div.innerHTML = `

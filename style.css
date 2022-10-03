@@ -133,6 +133,12 @@ a:hover {
   border: 1px solid var(--grayish-blue);
 }
 
+.notification__picture {
+  height: 45px;
+  width: 45px;
+  margin-left: auto;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
