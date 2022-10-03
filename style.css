@@ -139,7 +139,7 @@ a:hover {
 
 .notification__message:hover {
   cursor: pointer;
-  border: 1px transparent var(--grayish-blue);
+  border: 1px solid var(--white);
   background-color: var(--very-light-grayish-blue);
   color: var(--very-dark-blue);
 }
