@@ -22,6 +22,9 @@ function appendData(object) {
       notification = "notification__container notification__container--picture";
     }
 
+    let avatar = `
+      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+    `;
     let name = `
       <span class="notification__name">
         <a href="#">${iterator.name}</a>
@@ -37,10 +40,9 @@ function appendData(object) {
         <a href="#">${iterator.activity}</a>
       </span>
     `;
-
     if (notification == "notification__container notification__container--message") {
       div.innerHTML = `
-      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+      ${avatar}
       <div class="${notification}">
         <p class="notification__head">
           ${name}
@@ -52,7 +54,7 @@ function appendData(object) {
     `;
     } else if (notification == "notification__container notification__container--picture") {
       div.innerHTML = `
-      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+      ${avatar}
       <div class="${notification}">
         <p class="notification__head">
           ${name}
@@ -63,7 +65,7 @@ function appendData(object) {
     `;
     } else {
       div.innerHTML = `
-      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+      ${avatar}
       <div class="${notification}">
         <p class="notification__head">
           ${name}
