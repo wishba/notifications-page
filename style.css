@@ -99,23 +99,6 @@ a:hover {
   margin-left: 16px;
 }
 
-.notification__container--message {
-  position: relative;
-}
-
-.notification__container--message .notification__activity {
-  margin-top: 2em;
-  padding: 20px;
-  color: var(--dark-grayish-blue);
-  border: 1px solid var(--grayish-blue);
-  display: block;
-}
-
-.notification__container--message .notification__time {
-  position: absolute;
-  top: 1.5em;
-}
-
 .notification__head {
   position: relative;
 }
@@ -129,8 +112,25 @@ a:hover {
   color: var(--grayish-blue);
 }
 
+.notification__activity--picture {
+  height: 45px;
+}
+
 .notification__time {
   color: var(--grayish-blue);
+}
+
+.notification__picture {
+  height: 45px;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+.notification__message {
+  margin-top: .5em;
+  padding: 20px;
+  color: var(--dark-grayish-blue);
+  border: 1px solid var(--grayish-blue);
 }
 
 .attribution {
