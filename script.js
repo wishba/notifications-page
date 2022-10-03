@@ -6,7 +6,6 @@ fetch("data.json")
 function appendData(object) {
   for (const iterator of object) {
     console.log(iterator);
-
     let div = document.createElement("div")
     if (iterator.status === "unread") {
       div.className = "notification notification--unread";
@@ -15,57 +14,35 @@ function appendData(object) {
       div.className = "notification";
     }
 
+    let notification = "notification__container";
     if (iterator.activityCategory == "sent you a private message") {
-      div.innerHTML = `
-      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
-      <div class="${notification}">
-        <p class="notification__head">
-          <span class="notification__name">
-            <a href="#">${iterator.name}</a>
-          </span>
-          <span class="notification__activity-category">
-            ${iterator.activityCategory}
-          </span>
-        </p>
-        <p class="notification__time">${iterator.time}</p>
-        <p class="notification__message">${iterator.activity}</p>
-      </div>
-    `;
-    } else if (iterator.activityCategory == "commented on your picture") {
-      div.innerHTML = `
-      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
-      <div class="${notification}">
-        <p class="notification__head">
-          <span class="notification__name">
-            <a href="#">${iterator.name}</a>
-          </span>
-          <span class="notification__activity-category">
-            ${iterator.activityCategory}
-          </span>
-        </p>
-        <p class="notification__time">${iterator.time}</p>
-        <div class="notification__picture" style="background-image: url(${iterator.activity});"></div>
-      </div>
-    `;
-    } else {
-      div.innerHTML = `
-      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
-      <div class="${notification}">
-        <p class="notification__head">
-          <span class="notification__name">
-            <a href="#">${iterator.name}</a>
-          </span>
-          <span class="notification__activity-category">
-            ${iterator.activityCategory}
-          </span>
-          <span class="notification__activity">
-            <a href="#">${iterator.activity}</a>
-          </span>
-        </p>
-        <p class="notification__time">${iterator.time}</p>
-      </div>
-    `;
+      notification = "notification__container notification__container--message";
     }
+    if (iterator.activityCategory == "commented on your picture") {
+      notification = "notification__container notification__container--picture";
+    }
+
+    let divChild = `
+      <p class="notification__head">
+        <span class="notification__name">
+          <a href="#">${iterator.name}</a>
+        </span>
+        <span class="notification__activity-category">
+          ${iterator.activityCategory}
+        </span>
+        <span class="notification__activity">
+          <a href="#">${iterator.activity}</a>
+        </span>
+      </p>
+      <p class="notification__time">${iterator.time}</p>
+    `;
+
+    div.innerHTML = `
+      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+      <div class="${notification}">
+        ${divChild}
+      </div>
+    `;
 
     document.getElementById("notification").appendChild(div);
   }
