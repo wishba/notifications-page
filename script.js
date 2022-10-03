@@ -101,3 +101,7 @@ function appendData(object) {
   console.log(unread);
   document.getElementById("notificationCount").innerHTML = unread;
 }
+
+function markAllRead() {
+  document.getElementById("notificationCount").style.display = "none";
+}
