@@ -89,6 +89,7 @@ a:hover {
   border-radius: 5px;
   position: absolute;
   bottom: 2.5px;
+  margin-right: .5em;
 }
 
 .notification__avatar {
@@ -110,11 +111,13 @@ a:hover {
 
 .notification__activity-category {
   color: var(--grayish-blue);
+  margin-right: .5em;
 }
 
 .notification__activity {
   color: var(--blue);
   font-weight: 800;
+  margin-right: .5em;
 }
 
 .notification__time {
