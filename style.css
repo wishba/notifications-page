@@ -112,8 +112,9 @@ a:hover {
   color: var(--grayish-blue);
 }
 
-.notification__activity--picture {
-  height: 45px;
+.notification__activity {
+  color: var(--blue);
+  font-weight: 800;
 }
 
 .notification__time {
