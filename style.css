@@ -137,6 +137,13 @@ a:hover {
   border: 1px solid var(--grayish-blue);
 }
 
+.notification__message:hover {
+  cursor: pointer;
+  border: 1px transparent var(--grayish-blue);
+  background-color: var(--very-light-grayish-blue);
+  color: var(--very-dark-blue);
+}
+
 .notification__picture {
   height: 45px;
   width: 45px;
