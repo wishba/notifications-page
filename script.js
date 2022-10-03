@@ -17,15 +17,9 @@ function appendData(object) {
     let notification = "notification__container";
     if (iterator.activityCategory == "sent you a private message") {
       notification = "notification__container notification__container--message";
-      // div.innerHTML = "tes"
     }
     if (iterator.activityCategory == "commented on your picture") {
       notification = "notification__container notification__container--picture";
-      //   iterator.activity = `<img class="notification__activity--picture" src="${iterator.activity}" alt="picture">`;
-      //   document
-      //   console.log(
-      //     document.querySelector("notification__container--picture").innerHTML = "tes";
-      // );
     }
 
     let name = `
@@ -44,7 +38,32 @@ function appendData(object) {
       </span>
     `;
 
-    div.innerHTML = `
+    if (notification == "notification__container notification__container--message") {
+      div.innerHTML = `
+      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+      <div class="${notification}">
+        <p class="notification__head">
+          ${name}
+          ${activityCategory}
+        </p>
+        <p class="notification__time">${iterator.time}</p>
+        <p>${iterator.activity}</p>  
+      </div>
+    `;
+    } else if (notification == "notification__container notification__container--picture") {
+      div.innerHTML = `
+      <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
+      <div class="${notification}">
+        <p class="notification__head">
+          ${name}
+          ${activityCategory}
+          ${activity}
+        </p>
+        <img src="${iterator.activity}">
+      </div>
+    `;
+    } else {
+      div.innerHTML = `
       <div class="notification__avatar" style="content: url(${iterator.avatar});"></div>
       <div class="${notification}">
         <p class="notification__head">
@@ -55,6 +74,7 @@ function appendData(object) {
         <p class="notification__time">${iterator.time}</p>
       </div>
     `;
+    }
 
     document.getElementById("notification").appendChild(div);
   }
