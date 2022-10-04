@@ -86,11 +86,11 @@ a:hover {
 
 .notification--unread .notification__head::after {
   content: '';
-  border: 5px solid var(--red);
-  font-size: 0;
-  border-radius: 5px;
-  position: absolute;
-  top: 7px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--red);
+  display: inline-block;
 }
 
 .notification__avatar {
