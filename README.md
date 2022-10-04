@@ -63,23 +63,38 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### What I learned
 
-[htmlcollection](https://www.w3schools.com/jsreF/dom_obj_htmlcollection.asp) properties and method are:
+- [htmlcollection](https://www.w3schools.com/jsreF/dom_obj_htmlcollection.asp) properties and method are:
 
-- length()
-- item()
-- namedItem()
+  - length()
+  - item()
+  - namedItem()
 
-but can use more properties and method if it used with loop.
+  but can use more properties and method if it used with loop.
 
-example :
+  example in this project:
 
-```js
-function markAllRead() {
-  let notification = document.getElementsByClassName('notification')
-  for (const iterator of notification) {
-    iterator.classList.remove("notification--unread")
+  ```js
+  function markAllRead() {
+    let notification = document.getElementsByClassName('notification')
+    for (const iterator of notification) {
+      iterator.classList.remove("notification--unread")
+    }
   }
-}
+  ```
+
+- ::after selector can display a background with empty content, but the size is need to be defined and the display needs to be a block or inline-block
+
+  example in this project:
+
+  ```css
+  .notification__head::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--red);
+    display: inline-block;
+  }
 ```
 
 ### Continued development
