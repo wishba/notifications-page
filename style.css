@@ -107,18 +107,18 @@ a:hover {
   font-weight: 800;
 }
 
-.notification__do {
+.notification__activity-category {
   margin-right: 8px;
   color: var(--grayish-blue);
 }
 
-.notification__post {
+.notification__activity {
   margin-right: 8px;
   color: var(--dark-grayish-blue);
   font-weight: 800;
 }
 
-.notification__group {
+.notification__activity.notification__activity--group {
   margin-right: 8px;
   color: var(--blue);
   font-weight: 800;
